@@ -103,12 +103,10 @@ namespace Primeruso.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -144,12 +142,10 @@ namespace Primeruso.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -180,12 +176,6 @@ namespace Primeruso.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CorreoElectr")
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
-                        .HasColumnName("Correo_Electr");
-
                     b.Property<string>("Direccion")
                         .HasMaxLength(50)
                         .IsUnicode(false)
@@ -201,10 +191,6 @@ namespace Primeruso.Migrations
                     b.Property<DateTime?>("FechaNacimient")
                         .HasColumnType("datetime")
                         .HasColumnName("Fecha_Nacimient");
-
-                    b.Property<int>("IdUsuario")
-                        .HasColumnType("int")
-                        .HasColumnName("ID_Usuario");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
