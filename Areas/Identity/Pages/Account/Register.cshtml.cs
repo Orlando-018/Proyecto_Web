@@ -88,6 +88,17 @@ namespace Primeruso.Areas.Identity.Pages.Account
             [Display(Name = "Apellido")]
             public string Apellido { get; set; }
 
+            [Required]
+            [StringLength(50, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
+            [Display(Name = "Direccion")]
+            public string Direccion { get; set; }
+
+            [Required]
+            [StringLength(50, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
+            [Display(Name = "Fecha de Nacimiento")]
+            public DateTime FechaNacimient { get; set; }
+
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
