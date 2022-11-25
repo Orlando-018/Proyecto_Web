@@ -18,8 +18,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.LoginPath = "/Account/Identity/Login";
-    options.AccessDeniedPath = "/Account/Identity/AccessDenied";
+    options.LoginPath = "/Identity/Account/Login";
+    options.AccessDeniedPath = "/Identity/Account/AccessDenied";
 });
 
 

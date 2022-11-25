@@ -11,6 +11,101 @@
         .TextosJustificados{
             text-align: justify;
         }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        body {
+            background: white;
+        }
+
+        header {
+            width: 100%;
+            height: 90px 210px;
+        }
+
+        .Interior {
+            max-width: 100%;
+            padding: 0 10px;
+            margin: auto;
+        }
+
+        .Logo {
+            padding: 5px 50px 0;
+        }
+
+            .Logo img {
+                height: 80px;
+            }
+
+                .Logo img:hover {
+                    transform: scale(1.1);
+                }
+
+        .nav {
+            float: right;
+            display: flex;
+            align-items: center;
+            min-height: 80px;
+            z-index: 1000;
+        }
+
+            .nav ul {
+                list-style: none;
+                padding: 0 20px;
+            }
+
+                .nav ul li {
+                    display: inline-block;
+                    position: relative;
+                    transition: .3s linear;
+                    z-index: 1000;
+                }
+
+                    .nav ul li:hover {
+                        transform: scale(1.1);
+                    }
+
+                    .nav ul li a {
+                        color: white;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 12px 20px;
+                        transition: .3s linear;
+                    }
+
+
+        .contenedor {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .segunda {
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 20px;
+        }
+
+        .btn [type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 20px;
+            float: right;
+            color: aqua;
+        }
+
     </style>
 </head>
 <body>
@@ -28,10 +123,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Recomendaciones</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Sugerencias">Sugerencias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Reservar">Reservar</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservacions" asp-action="Index">Reservar</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Primeruso.Models;
 using System.Diagnostics;
 
@@ -19,6 +20,12 @@ namespace Primeruso.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [Authorize(Roles ="ADMIN")]
+        public IActionResult Sugerencias()
         {
             return View();
         }
