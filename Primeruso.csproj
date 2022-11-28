@@ -8,6 +8,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\imagenes\comentarios.png" />
+    <Content Remove="wwwroot\imagenes\cuarto.png" />
+    <Content Remove="wwwroot\imagenes\facebook.png" />
+    <Content Remove="wwwroot\imagenes\grupo.png" />
+    <Content Remove="wwwroot\imagenes\hotel.png" />
+    <Content Remove="wwwroot\imagenes\instagram.png" />
+    <Content Remove="wwwroot\imagenes\llave-de-la-habitacion.png" />
+    <Content Remove="wwwroot\imagenes\logotipo-de-twitter.png" />
+    <Content Remove="wwwroot\imagenes\reserva.png" />
+    <Content Remove="wwwroot\imagenes\youtube.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\imagenes\comentarios.png" />
+    <None Include="wwwroot\imagenes\cuarto.png" />
+    <None Include="wwwroot\imagenes\facebook.png" />
+    <None Include="wwwroot\imagenes\grupo.png" />
+    <None Include="wwwroot\imagenes\hotel.png" />
+    <None Include="wwwroot\imagenes\instagram.png" />
+    <None Include="wwwroot\imagenes\llave-de-la-habitacion.png" />
+    <None Include="wwwroot\imagenes\logotipo-de-twitter.png" />
+    <None Include="wwwroot\imagenes\reserva.png" />
+    <None Include="wwwroot\imagenes\youtube.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.10" />
