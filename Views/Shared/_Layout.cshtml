@@ -96,6 +96,12 @@
             border-radius: 20px;
         }
 
+        .Tercera {
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 20px;
+        }
+
         .btn [type="submit"] {
             border: none;
             outline: none;
@@ -105,6 +111,45 @@
             float: right;
             color: aqua;
         }
+
+        body {
+    background: #eee;
+    font-family: sans-serif;
+  }
+  
+  .card {
+    width: 800px;
+    background: #fff;
+    margin: 16px auto;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .title {
+    background: #e3f4ff;
+    margin: 8px auto;
+    padding: 5px;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .content {
+    background: #e3f4ff;
+    margin: 8px auto;
+    padding: 10px;
+  }
+  
+  .button-container {
+    background: #e3f4ff;
+    text-align: right;
+  }
+  
+  button {
+    background: white;
+    border: 1px solid #eee;
+    margin: 15px;
+    font-size: 15px;
+  }
 
     </style>
 </head>
@@ -127,6 +172,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Reservacions" asp-action="Index">Reservar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Estatus">Estatus</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />

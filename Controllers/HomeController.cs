@@ -24,8 +24,13 @@ namespace Primeruso.Controllers
             return View();
         }
 
-        [Authorize(Roles ="ADMIN")]
+        [Authorize]
         public IActionResult Sugerencias()
+        {
+            return View();
+        }
+
+        public IActionResult Estatus()
         {
             return View();
         }
