@@ -1,0 +1,33 @@
+﻿@model ReservaViewModel
+@{
+    ViewData["Title"] = "Reserva";
+}
+
+<h1>Reserva ahora</h1>
+<br>
+<h3>Aqui podras reservar en los hoteles mas famosos de mexico checa sus diversas habitaciones</h3>
+<br>
+<form method="post" asp-controller="Home" asp-action="ReservacionUsuarios" enctype="multipart/form-data"></form>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="NumeroReservacion"></label>
+    <input asp-for="NumeroReservacion" class="form-control"/>
+    <span asp-validation-for="NumeroReservacion" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Hotel"></label>
+    <select sp-for="Hotel" class="form-control" asp-items="Model.ListaHoteles"></select>
+    <span asp-validation-for="Hotel" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="NumeroHabitacion"></label>
+    <input asp-for="NumeroHabitacion" class="form-control" />
+    <span asp-validation-for="NumeroHabitacion" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TipoHabitacion"></label>
+    <input asp-for="TipoHabitacion" class="form-control" />
+    <span asp-validation-for="TipoHabitacion" class="text-danger"></span>
+</div>
+<br>
+<button type="submit">Reservar</button>
